@@ -45,8 +45,8 @@ build:
         bazel run @vaticle_dependencies//tool/unuseddeps:unused-deps -- list
     deploy-maven-snapshot:
       filter:
-        owner: vaticle
-        branch: master
+        owner: lolski
+        branch: java-8-support
       image: vaticle-ubuntu-20.04
       dependencies: [build, build-dependency]
       command: |
